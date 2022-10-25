@@ -1,0 +1,39 @@
+{
+  "name": "telegram-calendar-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/main/index.js",
+  "typings": "build/main/index.d.ts",
+  "module": "build/module/index.js",
+  "scripts": {
+    "start-bot-dev": "nodemon src/bot/index.ts",
+    "start-api-dev": "nodemon src/api/index.ts",
+    "build": "tsc",
+    "start-api-prod": "node build/main/api/index.js",
+    "start-bot-prod": "node build/main/bot/index.js"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.14",
+    "date-fns": "^2.29.3",
+    "express": "^4.18.1",
+    "google-auth-library": "^8.5.1",
+    "googleapis": "^107.0.0",
+    "node-telegram-bot-api": "^0.59.0",
+    "pg": "^8.8.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.10"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "@types/node-telegram-bot-api": "^0.57.1",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "engines": {
+    "node": "16.4.0",
+    "npm": "8.3.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
